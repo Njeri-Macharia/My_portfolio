@@ -1,20 +1,29 @@
 <template>
   <div class="min-h-screen bg-gradient-to-b from-teal-50 to-white">
     <!-- Header/Navigation -->
-    <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-sm border-b">
-      <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="#" class="text-2xl font-bold text-teal-600">Portfolio</a>
-        <div class="hidden md:flex space-x-8">
-          <a href="#about" class="text-gray-700 hover:text-teal-600">About</a>
-          <a href="#services" class="text-gray-700 hover:text-teal-600">Services</a>
-          <a href="#work" class="text-gray-700 hover:text-teal-600">Work</a>
-          <a href="#testimonials" class="text-gray-700 hover:text-teal-600">Testimonials</a>
-        </div>
-        <button class="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700">
-          Contact Me
-        </button>
-      </nav>
-    </header>
+    <header class="fixed top-0 w-full z-50 bg-teal-600 text-white shadow-md">
+  <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo and Branding -->
+    <a href="#" class="flex items-center text-2xl font-bold">
+      <img src="public/images/mercylogo.png" alt="Logo" class="h-8 mr-2" /> Portfolio
+    </a>
+
+    <!-- Navigation Links -->
+    <div class="hidden md:flex space-x-8">
+      <a href="#home" class="hover:opacity-80">Home</a>
+      <a href="#about" class="hover:opacity-80">About Us</a>
+      <a href="#services" class="hover:opacity-80">Services</a>
+      <a href="#portfolio" class="hover:opacity-80">Portfolio</a>
+      <a href="#contact" class="hover:opacity-80">Contact</a>
+    </div>
+
+    <!-- Call-to-Action Button -->
+    <button class="bg-white text-teal-600 px-6 py-2 rounded-full shadow-md hover:bg-gray-100">
+      Let's talk
+    </button>
+  </nav>
+</header>
+
 
     <!-- Hero Section -->
     <section class="pt-32 pb-20 px-4">
@@ -160,7 +169,7 @@
 import { ref } from 'vue'
 import { StarIcon } from 'lucide-vue-next'
 
-const profileImage = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dYI9rscybKepIertoQAwbmNsjEGlvG.png"
+const profileImage = "public/images/profile.jpg"
 
 const services = ref([
   {
