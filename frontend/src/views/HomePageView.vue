@@ -26,7 +26,7 @@
 
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4">
+    <section class="pt-32 pb-20 px-4 bg-teal100">
       <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div class="md:w-1/2 mb-10 md:mb-0">
           <h2 class="text-secondary text-3xl font-semibold">Hello, I'm Mercy Macharia</h2>
@@ -128,38 +128,43 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-teal-900 text-white py-12">
+    <footer class="bg-primary text-white py-12">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 class="text-2xl font-bold mb-4">Portfolio</h3>
-            <p class="text-teal-100">Creating digital experiences that matter</p>
+            <p class="text-white">Creating digital experiences that matter</p>
           </div>
           <div>
             <h4 class="font-semibold mb-4">Quick Links</h4>
             <ul class="space-y-2">
-              <li><a href="#" class="text-teal-100 hover:text-white">About</a></li>
-              <li><a href="#" class="text-teal-100 hover:text-white">Services</a></li>
-              <li><a href="#" class="text-teal-100 hover:text-white">Work</a></li>
-              <li><a href="#" class="text-teal-100 hover:text-white">Contact</a></li>
+              <li><a href="#about" class="text-white hover:text-white">About</a></li>
+              <li><a href="#sevices" class="text-white hover:text-white">Services</a></li>
+              <li><a href="#portfolio" class="text-white hover:text-white">Work</a></li>
+              <li><a href="#contact" class="text-white hover:text-white">Contact</a></li>
             </ul>
           </div>
           <div>
             <h4 class="font-semibold mb-4">Services</h4>
             <ul class="space-y-2">
-              <li><a href="#" class="text-teal-100 hover:text-white">UI/UX Design</a></li>
-              <li><a href="#" class="text-teal-100 hover:text-white">Web Development</a></li>
-              <li><a href="#" class="text-teal-100 hover:text-white">Mobile Apps</a></li>
-              <li><a href="#" class="text-teal-100 hover:text-white">Branding</a></li>
+              <li><a href="#" class="text-white hover:text-white">UI/UX Design</a></li>
+              <li><a href="#" class="text-white hover:text-white">Web Development</a></li>
+              <li><a href="#" class="text-white hover:text-white">Mobile Apps</a></li>
+              <li><a href="#" class="text-white hover:text-white">Branding</a></li>
             </ul>
           </div>
           <div>
             <h4 class="font-semibold mb-4">Contact</h4>
             <ul class="space-y-2">
-              <li class="text-teal-100">contact@example.com</li>
-              <li class="text-teal-100">+1 234 567 890</li>
+              <li class="text-white">mercymachariya@gmail.com</li>
+              <li class="text-white">+254703503568</li>
             </ul>
+            <div class="mt-10 flex flex-col md:flex-row items-center justify-between px-6 container mx-auto">
+            <a href="www.linkedin.com/in/mercy-macharia-941a25222" class="text-white text-xl hover:text-secondary"><i class="fab fa-linkedin"></i></a>
+           <a href="#" class="text-white text-xl hover:text-secondary"><i class="fab fa-instagram"></i></a>
+           <a href="#" class="text-white text-xl hover:text-secondary"><i class="fas fa-globe"></i></a>
           </div>
+    </div>
         </div>
       </div>
     </footer>
