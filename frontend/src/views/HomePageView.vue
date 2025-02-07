@@ -175,24 +175,24 @@
 import { ref } from 'vue'
 import { StarIcon } from 'lucide-vue-next'
 
-const profileImage = "public/images/profile.png"
-const logo="public/images/mercylogo.png"
+const profileImage = "/images/profile.png"
+const logo="/images/mercylogo.png"
 
 const services = ref([
   {
     title: 'UI/UX Design',
     description: 'Creating beautiful and intuitive user interfaces that delight users',
-    icon: 'PenToolIcon'
+    icon: '/images/uidesign.png'
   },
   {
     title: 'Web Development',
     description: 'Building responsive and performant web applications',
-    icon: 'CodeIcon'
+    icon: '/images/uidesign.png'
   },
   {
     title: 'Mobile Development',
     description: 'Developing cross-platform mobile applications',
-    icon: 'SmartphoneIcon'
+    icon: '/images/uidesign.png'
   }
 ])
 
