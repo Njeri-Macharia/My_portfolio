@@ -1,11 +1,11 @@
 <template>
   <div class="min-h-screen bg-gradient-to-b from-teal-50 to-white">
     <!-- Header/Navigation -->
-    <header class="fixed top-0 w-full z-50 bg-teal-600 text-white shadow-md">
+    <header class="fixed top-0 w-full z-50 bg-primary text-white shadow-md">
   <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
     <!-- Logo and Branding -->
     <a href="#" class="flex items-center text-2xl font-bold">
-      <img src="public/images/mercylogo.png" alt="Logo" class="h-8 mr-2" /> Portfolio
+      <img :src="logo" alt="Logo" class="h-8 mr-2" /> Portfolio
     </a>
 
     <!-- Navigation Links -->
@@ -18,7 +18,7 @@
     </div>
 
     <!-- Call-to-Action Button -->
-    <button class="bg-white text-teal-600 px-6 py-2 rounded-full shadow-md hover:bg-gray-100">
+    <button class="bg-white text-primary px-6 py-2 rounded-full shadow-md hover:bg-gray-100">
       Let's talk
     </button>
   </nav>
@@ -170,6 +170,7 @@ import { ref } from 'vue'
 import { StarIcon } from 'lucide-vue-next'
 
 const profileImage = "public/images/profile.jpg"
+const logo="public/images/mercylogo.png"
 
 const services = ref([
   {
