@@ -11,7 +11,7 @@
     <!-- Navigation Links -->
     <div class="hidden md:flex space-x-8">
       <a href="#home" class="hover:opacity-80">Home</a>
-      <a href="#about" class="hover:opacity-80">About Us</a>
+      <a href="#about" class="hover:opacity-80">About Me</a>
       <a href="#services" class="hover:opacity-80">Services</a>
       <a href="#portfolio" class="hover:opacity-80">Portfolio</a>
       <a href="#contact" class="hover:opacity-80">Contact</a>

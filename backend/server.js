@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Email configuration
 const transporter = nodemailer.createTransport({
-  host: 'mercyclaicy001@gmail.com',
+  host: 'smtp.gmail.com',
   port: 587,
   secure: false,
   auth: {
@@ -41,7 +41,7 @@ app.post('/api/contact', validateContact, async (req, res) => {
     // Send email
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: 'your@email.com',
+      to: 'mercyclaicy001@gmail.com',
       subject: `New Contact Form Submission from ${name}`,
       text: `
         Name: ${name}
