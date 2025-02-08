@@ -16,12 +16,12 @@
       </div>
 
       <!-- Call-to-Action Button (Visible on Desktop) -->
-      <router-link to="/contact" class="hidden md:block bg-white text-primary px-6 py-2 rounded-full shadow-md hover:bg-gray-100">
+      <router-link to="/lets-talk" class="hidden md:block bg-white text-primary px-6 py-2 rounded-full shadow-md hover:bg-gray-100">
         Let's talk
       </router-link>
 
       <!-- Mobile Hamburger Menu Button -->
-      <router-link to="/contact" @click="isMenuOpen = !isMenuOpen" class="md:hidden focus:outline-none">
+      <router-link to="/lets-talk" @click="isMenuOpen = !isMenuOpen" class="md:hidden focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
