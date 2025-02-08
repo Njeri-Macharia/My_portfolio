@@ -6,7 +6,7 @@
     <BioSection />
     <WorkSection />
     <div class="relative">
- <div class="absolute inset-x-0 -top-20 mx-auto max-w-3xl bg-teal100 rounded-2xl shadow-lg px-8 py-10 z-10">
+ <div class="absolute inset-x-0 -top-24 mx-auto max-w-3xl bg-teal100 rounded-2xl shadow-lg px-8 py-10 z-10">
   <h2 class="text-2xl font-semibold text-gray-900 text-center">
     Cannot find your desired service?
   </h2>

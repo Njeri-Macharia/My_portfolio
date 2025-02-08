@@ -1,5 +1,5 @@
 <template>
-     <section id="work" class="py-20 bg-sectionbg ">
+     <section id="work" class="pb-40 py-10 bg-sectionbg ">
       <div class="container mx-auto text-center ">
         <h3 class="text-secondary font-bold ">WORKING PROCESS</h3>
       </div>

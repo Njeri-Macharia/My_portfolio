@@ -18,21 +18,25 @@
       <div>
         <p class="text-gray-700 text-lg leading-relaxed">
           I am an aspiring Data Science enthusiast with a strong foundation in full-stack development, specializing in Vue.js, Node.js, Flutter, MongoDB, and SQL. My passion lies in leveraging technology to solve real-world problems, with a keen interest in Artificial Intelligence (AI) and data-driven solutions.
-
-Beyond development, I am an event organizer at Daystar Information and Technology Association Ladies (DITA Lit), where I have successfully coordinated impactful events such as Members’ Day and Codeversations, bringing together multiple speakers to inspire and empower fellow tech enthusiasts.
-Skills & Interests:
-<br>
-Frontend: Vue.js, Tailwind CSS <br>
-Backend: Node.js <br>
-Mobile Development: Flutter (GetX, Navigator)<br>
-Databases: MongoDB, SQL<br>
-Data Science & AI: Exploring machine learning and predictive analytics<br>
-Community Leadership: Organizing tech events & fostering collaboration<br>
-I am constantly learning, exploring new technologies, and building solutions that make a difference. Looking forward to collaborations, mentorship, and opportunities in data science, AI, and software development!
-
-
         </p>
 
+        <p class="text-gray-700 text-lg leading-relaxed mt-4">
+          Beyond development, I am an event organizer at Daystar Information and Technology Association Ladies (DITA Lit), where I have successfully coordinated impactful events such as Members’ Day and Codeversations, bringing together multiple speakers to inspire and empower fellow tech enthusiasts.
+        </p>
+
+        <!-- Bullet Points for Skills & Interests -->
+        <ul class="list-disc list-inside mt-4  text-lg">
+          <li><strong class="text-secondary">Frontend:</strong> Vue.js, Tailwind CSS</li>
+          <li><strong class="text-secondary">Backend:</strong> Node.js</li>
+          <li><strong class="text-secondary">Mobile Development:</strong> Flutter (GetX, Navigator)</li>
+          <li><strong class="text-secondary">Databases:</strong> MongoDB, SQL</li>
+          <li><strong class="text-secondary">Data Science & AI:</strong> Exploring machine learning and predictive analytics</li>
+          <li><strong class="text-secondary">Community Leadership:</strong> Organizing tech events & fostering collaboration</li>
+        </ul>
+
+        <p class="text-gray-700 text-lg leading-relaxed mt-4">
+          I am constantly learning, exploring new technologies, and building solutions that make a difference. Looking forward to collaborations, mentorship, and opportunities in data science, AI, and software development!
+        </p>
       </div>
     </div>
 

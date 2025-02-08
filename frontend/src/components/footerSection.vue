@@ -27,17 +27,29 @@
         <div>
           <h4 class="font-semibold mb-4">Contact</h4>
           <ul class="space-y-2">
-            <li class="text-white">mercymachariya@gmail.com</li>
-            <li class="text-white">+254703503568</li>
-          </ul>
-          <div class="mt-10 flex space-x-6">
-            <a href="https://www.linkedin.com/in/mercy-macharia-941a25222" class="text-white text-xl hover:text-secondary">
+  <li class="text-white">
+    <a href="mailto:mercymachariya@gmail.com" class="hover:text-secondary">
+      mercymachariya@gmail.com
+    </a>
+  </li>
+  <li class="text-white">
+    <a href="tel:+254703503568" class="hover:text-secondary">
+      +254 703 503 568
+    </a>
+  </li>
+</ul>
+
+          <div class="mt-6 flex space-x-6">
+            <a href="https://www.linkedin.com/in/mercy-macharia-941a25222" class="text-white text-xl hover:text-secondary" target="_blank"
+   rel="noopener noreferrer">
               <i class="fab fa-linkedin"></i>
             </a>
-            <a href="#" class="text-white text-xl hover:text-secondary">
-              <i class="fab fa-instagram"></i>
+            <a href="https://wa.me/254703503568" class="text-white text-xl hover:text-secondary" target="_blank"
+            rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="#" class="text-white text-xl hover:text-secondary">
+            <a href="#" class="text-white text-xl hover:text-secondary" target="_blank"
+            rel="noopener noreferrer">
               <i class="fas fa-globe"></i>
             </a>
           </div>

@@ -1,5 +1,5 @@
 <template>
-  <section id="services" class="py-10 bg-sectionbg">
+  <section id="services" class="py-8 pb-15 bg-sectionbg">
     <!-- Services Title Container -->
     <div class="w-fit px-6 py-2 mx-auto shadow-lg text-center rounded-xl bg-white">
       <h3 class="text-secondary font-bold text-lg">Services</h3>
