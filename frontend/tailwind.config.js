@@ -9,7 +9,8 @@ export default {
       black: '#000000',
       arrowcolor: '#ffaf01',
       white: '#ffffff',
-      teal100:'#f0fafc'
+      teal100:'#f0fafc',
+      sectionbg:'#fff8f9'
     },
     extend: {},
   },

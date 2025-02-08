@@ -39,7 +39,7 @@
             Creating beautiful and functional digital experiences that help businesses grow
           </p>
           <div class="flex space-x-4">
-            <button class="bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary">
+            <button class="bg-secondary text-white px-8 py-3 rounded-full hover:bg-primary">
               Hire Me
             </button>
             <button class="bg-primary border-2 border-primary text-white px-8 py-3 rounded-full hover:bg-secondary hover:border-secondary">
@@ -54,14 +54,17 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
+    <section id="services" class="py-20 bg-sectionbg">
+      <div class="container w-20 h-8 mx-auto shadow-lg text-center rounded-2x1 bg-white">
+        <h3 class="text-secondary font-bold ">Services</h3>
+      </div>
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-16">What Can I do?</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div v-for="service in services" :key="service.title"
                class="p-6 rounded-xl bg-white shadow-lg hover:shadow-xl transition-shadow">
             <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4">
-              <component :is="service.icon" class="w-8 h-8 text-primary" />
+              <img :src="service.icon" :alt="service.title" class="w-20 h-20 object-contain" />
             </div>
             <h3 class="text-xl font-semibold mb-3">{{ service.title }}</h3>
             <p class="text-gray-600">{{ service.description }}</p>
@@ -187,12 +190,12 @@ const services = ref([
   {
     title: 'Web Development',
     description: 'Building responsive and performant web applications',
-    icon: '/images/uidesign.png'
+    icon: '/images/webdev.png'
   },
   {
     title: 'Mobile Development',
     description: 'Developing cross-platform mobile applications',
-    icon: '/images/uidesign.png'
+    icon: '/images/mobiledev.png'
   }
 ])
 
