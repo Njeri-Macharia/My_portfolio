@@ -45,4 +45,5 @@ import FooterSection from "@/components/footerSection.vue";
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
 </style>

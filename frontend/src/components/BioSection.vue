@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-teal-100 py-12 px-6 md:px-16 rounded-lg relative overflow-hidden">
+  <section id="biography" class="bg-teal-100 py-12 px-6 md:px-16 rounded-lg relative overflow-hidden scroll-mt-20">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <!-- Left Side (Title & Button) -->
       <div>
