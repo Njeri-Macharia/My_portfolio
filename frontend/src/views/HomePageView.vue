@@ -81,7 +81,7 @@
         <h2 class="text-3xl font-bold text-gray-900">My <br> <span class="text-black">Biography</span></h2>
         <button class="mt-6 flex items-center space-x-3 bg-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition">
           <div class="w-8 h-8 flex items-center justify-center bg-secondary rounded-full">
-            <CheckIcon class="w-5 h-5 text-white" />
+            <CheckIcon class="w-5 h-5 bg-white" />
           </div>
           <span class="text-gray-900 font-medium">Download CV</span>
         </button>
