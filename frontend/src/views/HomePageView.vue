@@ -18,8 +18,8 @@
     <button class="bg-primary text-white px-5 py-2 rounded-lg shadow-md hover:bg-teal-700 transition">
       Hire Me
     </button>
-    <button class="border border-primary text-primary px-5 py-2 rounded-lg hover:bg-primary hover:text-white transition">
-      +2540703503568
+    <button class="border border-primary text-primary px-5 py-2 rounded-lg hover:bg-primary hover:text-white transition" >
+      <a href="tel:+2540703503568">+2540703503568</a>
     </button>
   </div>
 </div>
