@@ -16,16 +16,16 @@
       </div>
 
       <!-- Call-to-Action Button (Visible on Desktop) -->
-      <button class="hidden md:block bg-white text-primary px-6 py-2 rounded-full shadow-md hover:bg-gray-100">
+      <router-link to="/contact" class="hidden md:block bg-white text-primary px-6 py-2 rounded-full shadow-md hover:bg-gray-100">
         Let's talk
-      </button>
+      </router-link>
 
       <!-- Mobile Hamburger Menu Button -->
-      <button @click="isMenuOpen = !isMenuOpen" class="md:hidden focus:outline-none">
+      <router-link to="/contact" @click="isMenuOpen = !isMenuOpen" class="md:hidden focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
-      </button>
+      </router-link>
     </nav>
 
     <!-- Mobile Menu Overlay -->
@@ -45,7 +45,7 @@
       </button>
 
       <nav class="flex flex-col items-center mt-16 space-y-6 text-lg">
-        <a href="#" class="hover:opacity-80" @click="isMenuOpen = false">Home</a>
+        <a href="/" class="hover:opacity-80" @click="isMenuOpen = false">Home</a>
         <a href="#services" class="hover:opacity-80" @click="isMenuOpen = false">Services</a>
         <a href="#biography" class="hover:opacity-80" @click="isMenuOpen = false">About Me</a>
         <a href="#work" class="hover:opacity-80" @click="isMenuOpen = false">Portfolio</a>
