@@ -3,10 +3,10 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <!-- Left Side (Title & Button) -->
       <div>
-        <h2 class="text-3xl font-bold text-gray-900">
-          My <br> <span class="text-black">Biography</span>
+        <h2 class="text-6xl font-bold text-gray-900"><i>
+          My <br> <span class="text-black">Biography</span></i>
         </h2>
-        <button class="mt-6 flex items-center space-x-3 bg-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition">
+        <button class="mt-12 flex items-center space-x-3 bg-white px-8 py-5 rounded-lg shadow-md hover:shadow-lg transition">
           <div class="w-8 h-8 flex items-center justify-center bg-secondary rounded-full">
             <CheckIcon class="w-5 h-5 text-white" />
           </div>
@@ -17,14 +17,22 @@
       <!-- Right Side (Biography Text) -->
       <div>
         <p class="text-gray-700 text-lg leading-relaxed">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          It has survived not only five centuries, but also the leap into electronic typesetting.
+          I am an aspiring Data Science enthusiast with a strong foundation in full-stack development, specializing in Vue.js, Node.js, Flutter, MongoDB, and SQL. My passion lies in leveraging technology to solve real-world problems, with a keen interest in Artificial Intelligence (AI) and data-driven solutions.
+
+Beyond development, I am an event organizer at Daystar Information and Technology Association Ladies (DITA Lit), where I have successfully coordinated impactful events such as Members’ Day and Codeversations, bringing together multiple speakers to inspire and empower fellow tech enthusiasts.
+Skills & Interests:
+<br>
+Frontend: Vue.js, Tailwind CSS <br>
+Backend: Node.js <br>
+Mobile Development: Flutter (GetX, Navigator)<br>
+Databases: MongoDB, SQL<br>
+Data Science & AI: Exploring machine learning and predictive analytics<br>
+Community Leadership: Organizing tech events & fostering collaboration<br>
+I am constantly learning, exploring new technologies, and building solutions that make a difference. Looking forward to collaborations, mentorship, and opportunities in data science, AI, and software development!
+
+
         </p>
-        <p class="text-gray-600 mt-4">
-          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
-        </p>
+
       </div>
     </div>
 

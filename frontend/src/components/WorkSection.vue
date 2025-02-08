@@ -1,11 +1,11 @@
 <template>
-     <section id="work" class="py-20 bg-sectionbg">
-      <div class="container mx-auto text-center  ">
+     <section id="work" class="py-20 bg-sectionbg ">
+      <div class="container mx-auto text-center ">
         <h3 class="text-secondary font-bold ">WORKING PROCESS</h3>
       </div>
 
 
-      <div class="container mx-auto px-4 py-5">
+      <div class="container mx-auto px-4 py-5 ">
         <h2 class="text-3xl font-bold text-center mb-8">My Latest Work</h2>
     <!-- Filter Buttons -->
     <div class="container bg-teal100 rounded-full w-fit px-4 py-2 shadow-md flex justify-center gap-7 mx-auto mb-12 ">
