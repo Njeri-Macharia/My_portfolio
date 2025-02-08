@@ -21,47 +21,6 @@ import FooterSection from "@/components/footerSection.vue";
 
 
 <!-- <script setup>
-import { ref } from 'vue'
-import { StarIcon } from 'lucide-vue-next'
-
-const profileImage = "/images/profile.png"
-
-
-const services = ref([
-  {
-    title: 'UI/UX Design',
-    description: 'Creating beautiful and intuitive user interfaces that delight users',
-    icon: '/images/uidesign.png'
-  },
-  {
-    title: 'Web Development',
-    description: 'Building responsive and performant web applications',
-    icon: '/images/webdev.png'
-  },
-  {
-    title: 'Mobile Development',
-    description: 'Developing cross-platform mobile applications',
-    icon: '/images/mobiledev.png'
-  }
-])
-
-const projects = ref([
-  {
-    title: 'E-commerce Platform',
-    description: 'A modern e-commerce solution',
-    image: '/placeholder.svg?height=400&width=600'
-  },
-  {
-    title: 'Social Media Dashboard',
-    description: 'Analytics and management platform',
-    image: '/placeholder.svg?height=400&width=600'
-  },
-  {
-    title: 'Healthcare App',
-    description: 'Patient management system',
-    image: '/placeholder.svg?height=400&width=600'
-  }
-])
 
 const testimonials = ref([
   {
