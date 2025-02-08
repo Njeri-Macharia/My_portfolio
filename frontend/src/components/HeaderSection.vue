@@ -8,12 +8,17 @@
 
       <!-- Desktop Navigation Links -->
       <div class="hidden md:flex space-x-8">
-        <a href="#home" class="hover:opacity-80">Home</a>
-        <a href="#biography" class="hover:opacity-80">About Me</a>
+        <a href="#" class="hover:opacity-80">Home</a>
         <a href="#services" class="hover:opacity-80">Services</a>
-        <a href="#portfolio" class="hover:opacity-80">Portfolio</a>
-        <a href="#contact" class="hover:opacity-80">Contact</a>
+        <a href="#biography" class="hover:opacity-80">About Me</a>
+        <a href="#work" class="hover:opacity-80">Portfolio</a>
+        <a href="#contact" class="hover:opacity-80">Contact Me</a>
       </div>
+
+      <!-- Call-to-Action Button (Visible on Desktop) -->
+      <button class="hidden md:block bg-white text-primary px-6 py-2 rounded-full shadow-md hover:bg-gray-100">
+        Let's talk
+      </button>
 
       <!-- Mobile Hamburger Menu Button -->
       <button @click="isMenuOpen = !isMenuOpen" class="md:hidden focus:outline-none">
@@ -40,11 +45,19 @@
       </button>
 
       <nav class="flex flex-col items-center mt-16 space-y-6 text-lg">
-        <a href="#home" class="hover:opacity-80" @click="isMenuOpen = false">Home</a>
-        <a href="#about" class="hover:opacity-80" @click="isMenuOpen = false">About Me</a>
+        <a href="#" class="hover:opacity-80" @click="isMenuOpen = false">Home</a>
         <a href="#services" class="hover:opacity-80" @click="isMenuOpen = false">Services</a>
-        <a href="#portfolio" class="hover:opacity-80" @click="isMenuOpen = false">Portfolio</a>
+        <a href="#biography" class="hover:opacity-80" @click="isMenuOpen = false">About Me</a>
+        <a href="#work" class="hover:opacity-80" @click="isMenuOpen = false">Portfolio</a>
         <a href="#contact" class="hover:opacity-80" @click="isMenuOpen = false">Contact</a>
+
+        <!-- Call-to-Action Button (Visible in Mobile Menu) -->
+        <button
+          class="bg-white text-primary px-6 py-2 rounded-full shadow-md hover:bg-gray-100 transition duration-300"
+          @click="isMenuOpen = false"
+        >
+          Let's talk
+        </button>
       </nav>
     </div>
   </header>

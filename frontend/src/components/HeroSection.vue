@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-32 pb-20 px-4 bg-teal-100">
+  <section class="pt-20 pb-20 px-4 bg-teal-100">
     <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
       <!-- Left Content -->
       <div class="md:w-1/2 mb-10 md:mb-0">
