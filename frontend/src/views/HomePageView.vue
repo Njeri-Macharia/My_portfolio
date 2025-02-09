@@ -15,9 +15,9 @@
   </p>
 
   <div class="flex justify-center gap-4 mt-6">
-    <button class="bg-primary text-white px-5 py-2 rounded-lg shadow-md hover:bg-teal-700 transition">
+     <router-link to="/lets-talk" class="bg-primary text-white px-5 py-2 rounded-lg shadow-md hover:bg-teal-700 transition">
       Hire Me
-    </button>
+    </router-link>
     <button class="border border-primary text-primary px-5 py-2 rounded-lg hover:bg-primary hover:text-white transition" >
       <a href="tel:+2540703503568">+2540703503568</a>
     </button>

@@ -8,14 +8,13 @@
       <h2 class="text-3xl font-bold text-center mb-8">My Latest Work</h2>
 
       <!-- Responsive Filter Buttons -->
-      <div class="container bg-teal100 rounded-full w-fit px-3 py-2 shadow-md flex flex-wrap justify-center gap-2 md:gap-3 mx-auto mb-10">
+      <div class="container bg-teal-100 rounded-full w-fit px-3 py-2 shadow-md flex flex-wrap justify-center gap-2 md:gap-3 mx-auto mb-10">
         <button
           v-for="category in categories"
           :key="category"
           @click="selectedCategory = category"
           class="px-2 md:px-3 py-1.5 rounded-full transition-all text-sm md:text-base whitespace-nowrap"
-          :class="selectedCategory === category ? 'bg-primary text-black' : 'bg-gray-200 text-gray-600'"
-        >
+          :class="selectedCategory === category ? 'bg-primary text-black' : 'bg-gray-200 text-gray-600'">
           {{ category }}
         </button>
       </div>
@@ -46,23 +45,57 @@ import { ref, computed } from "vue";
 const selectedCategory = ref("All");
 
 const categories = ["All", "Web Design", "Web Development", "Mobile App"];
+
 const projects = ref([
+  // Web Design
   {
     title: 'E-commerce Platform',
     description: 'A modern e-commerce solution',
-    image: '/images/ecormmerce.jpg'
+    image: '/images/ecommerce.jpg',
+    category: 'Web Design'
   },
   {
-    title: 'Social Media Dashboard',
-    description: 'Analytics and management platform',
-    image: '/images/dashboard.jpg'
+    title: 'Landing Pages Collection',
+    description: 'Responsive web pages for various businesses',
+    image: '/images/webpages.jpg',
+    category: 'Web Design'
+  },
+
+  // Web Development
+  {
+    title: 'My Portfolio',
+    description: 'Personal website showcasing my work',
+    image: '/images/portfolio.jpg',
+    category: 'Web Development'
   },
   {
-    title: 'Healthcare App',
-    description: 'Patient management system',
-    image: '/images/mobileapp.jpeg'
+    title: 'FitCon Backend',
+    description: 'Node.js backend for fitness app',
+    image: '/images/backend.jpg',
+    category: 'Web Development'
+  },
+  {
+    title: 'Insurance Customer System Backend',
+    description: 'Backend API for an insurance customer platform',
+    image: '/images/insurance-backend.jpg',
+    category: 'Web Development'
+  },
+
+  // Mobile Development
+  {
+    title: 'Trivia Quiz Game',
+    description: 'Fun and interactive quiz game',
+    image: '/images/trivia.jpg',
+    category: 'Mobile App'
+  },
+  {
+    title: 'Insurance Customer System',
+    description: 'Mobile app for customer interactions with brokers',
+    image: '/images/insurance-app.jpg',
+    category: 'Mobile App'
   }
 ]);
+
 const filteredProjects = computed(() => {
   if (selectedCategory.value === "All") return projects.value;
   return projects.value.filter((p) => p.category === selectedCategory.value);
