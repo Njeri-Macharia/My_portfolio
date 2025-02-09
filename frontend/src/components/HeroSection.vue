@@ -16,20 +16,38 @@
           <button class="bg-secondary text-white px-8 py-3 rounded-full hover:bg-primary">
             Hire Me
           </button>
+          <a href="#biography">
           <button class="bg-primary border-2 border-primary text-white px-8 py-3 rounded-full hover:bg-secondary hover:border-secondary">
-            View Portfolio
-          </button>
+          View Portfolio
+          </button></a>
         </div>
       </div>
 
       <!-- Right Image -->
       <div class="md:w-1/2 flex justify-center">
-        <img :src="profileImage" alt="Professional portrait" class="object-cover max-w-lg mx-auto rounded-full shadow-lg">
-      </div>
+    <img
+      ref="imageRef"
+      :src="profileImage"
+      alt="Professional portrait"
+      class="object-cover max-w-lg mx-auto rounded-full shadow-lg"
+    >
+  </div>
     </div>
   </section>
 </template>
 
 <script setup>
 const profileImage = "/images/profile.png"
+import { ref, onMounted } from "vue";
+import { useMotion } from "@vueuse/motion";
+const imageRef = ref(null);
+
+// Apply animation when mounted
+onMounted(() => {
+  useMotion(imageRef, {
+    initial: { opacity: 0, scale: 0.5 },
+    enter: { opacity: 100, scale: 1, transition: { duration: 200 } },
+    hover: { scale: 1.1 }
+  });
+});
 </script>
