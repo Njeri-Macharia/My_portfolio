@@ -7,7 +7,7 @@
     <div class="container mx-auto px-4 py-5">
       <h2 class="text-3xl font-bold text-center mb-8">My Latest Work</h2>
 
-      <!-- Responsive Filter Buttons -->
+      <!-- Filter Buttons -->
       <div class="container bg-teal-100 rounded-full w-fit px-3 py-2 shadow-md flex flex-wrap justify-center gap-2 md:gap-3 mx-auto mb-10">
         <button
           v-for="category in categories"
@@ -20,7 +20,30 @@
       </div>
 
       <!-- Projects -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div v-if="selectedCategory === 'All'">
+        <!-- Swiper Carousel -->
+        <swiper
+          :slides-per-view="1"
+          :loop="true"
+          :autoplay="{ delay: 3000, disableOnInteraction: false }"
+          :pagination="{ clickable: true }"
+          class="rounded-lg overflow-hidden shadow-lg"
+        >
+          <swiper-slide v-for="project in projects" :key="project.id">
+            <div class="relative group">
+              <img :src="project.image" :alt="project.title" class="w-full h-64 object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+              <div class="absolute bottom-5 left-5 text-white">
+                <h3 class="text-xl font-semibold">{{ project.title }}</h3>
+                <p class="text-sm">{{ project.description }}</p>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper>
+      </div>
+
+      <!-- Grid View for Specific Categories -->
+      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div v-for="project in filteredProjects" :key="project.id"
              class="group relative overflow-hidden rounded-xl shadow-md transition-transform transform hover:scale-105">
           <img :src="project.image" :alt="project.title" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
@@ -41,6 +64,10 @@
 
 <script setup>
 import { ref, computed } from "vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
 
 const selectedCategory = ref("All");
 
@@ -51,7 +78,7 @@ const projects = ref([
   {
     title: 'E-commerce Platform',
     description: 'A modern e-commerce solution',
-    image: '/images/ecormmerce.jpg',
+    image: '/images/ecommerce.jpg',
     category: 'Web Design'
   },
   {
@@ -71,13 +98,13 @@ const projects = ref([
   {
     title: 'FitCon Backend',
     description: 'Node.js backend for fitness app',
-    image: '/images/ecormmerce.jpg',
+    image: '/images/backend.jpg',
     category: 'Web Development'
   },
   {
     title: 'Insurance Customer System Backend',
     description: 'Backend API for an insurance customer platform',
-    image: '/images/ecormmerce.jpg',
+    image: '/images/insurance-backend.jpg',
     category: 'Web Development'
   },
 
@@ -85,13 +112,13 @@ const projects = ref([
   {
     title: 'Trivia Quiz Game',
     description: 'Fun and interactive quiz game',
-    image: '/images/mobileapp.jpeg',
+    image: '/images/trivia.jpg',
     category: 'Mobile App'
   },
   {
     title: 'Insurance Customer System',
     description: 'Mobile app for customer interactions with brokers',
-    image: '/images/dashboard.jpg',
+    image: '/images/insurance-app.jpg',
     category: 'Mobile App'
   }
 ]);
