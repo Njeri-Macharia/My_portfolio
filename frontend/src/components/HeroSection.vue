@@ -1,8 +1,8 @@
 <template>
   <section class="pt-20 pb-20 px-4 bg-teal-100 flex items-center justify-center min-h-screen">
-    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
       <!-- Left Content -->
-      <div class="md:w-1/2 w-full space-y-6 text-center md:text-left">
+      <div class="md:w-1/2 w-full space-y-6 text-center md:text-left md:ml-4">
         <h2 class="text-secondary text-3xl font-semibold">Hello, I'm Mercy Macharia</h2>
         <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-relaxed">
           Professional
