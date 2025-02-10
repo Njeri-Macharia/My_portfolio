@@ -51,13 +51,13 @@ const projects = ref([
   {
     title: 'E-commerce Platform',
     description: 'A modern e-commerce solution',
-    image: '/images/ecommerce.jpg',
+    image: '/images/ecormmerce.jpg',
     category: 'Web Design'
   },
   {
     title: 'Landing Pages Collection',
     description: 'Responsive web pages for various businesses',
-    image: '/images/webpages.jpg',
+    image: '/images/profile.jpg',
     category: 'Web Design'
   },
 
@@ -65,19 +65,19 @@ const projects = ref([
   {
     title: 'My Portfolio',
     description: 'Personal website showcasing my work',
-    image: '/images/portfolio.jpg',
+    image: '/images/dashboard.jpg',
     category: 'Web Development'
   },
   {
     title: 'FitCon Backend',
     description: 'Node.js backend for fitness app',
-    image: '/images/backend.jpg',
+    image: '/images/ecormmerce.jpg',
     category: 'Web Development'
   },
   {
     title: 'Insurance Customer System Backend',
     description: 'Backend API for an insurance customer platform',
-    image: '/images/insurance-backend.jpg',
+    image: '/images/ecormmerce.jpg',
     category: 'Web Development'
   },
 
@@ -85,13 +85,13 @@ const projects = ref([
   {
     title: 'Trivia Quiz Game',
     description: 'Fun and interactive quiz game',
-    image: '/images/trivia.jpg',
+    image: '/images/mobileapp.jpeg',
     category: 'Mobile App'
   },
   {
     title: 'Insurance Customer System',
     description: 'Mobile app for customer interactions with brokers',
-    image: '/images/insurance-app.jpg',
+    image: '/images/dashboard.jpg',
     category: 'Mobile App'
   }
 ]);
