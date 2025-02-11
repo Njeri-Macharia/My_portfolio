@@ -16,14 +16,32 @@
       </div>
 
       <!-- Call-to-Action Button (Visible on Desktop) -->
-      <router-link to="/lets-talk" class="hidden md:block bg-white text-primary px-6 py-2 rounded-full shadow-md hover:bg-gray-100">
+      <router-link
+        to="/lets-talk"
+        class="hidden md:block bg-white text-primary px-6 py-2 rounded-full shadow-md hover:bg-gray-100"
+      >
         Let's talk
       </router-link>
 
       <!-- Mobile Hamburger Menu Button -->
-      <router-link to="/lets-talk" @click="isMenuOpen = !isMenuOpen" class="md:hidden focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      <router-link
+        to="/lets-talk"
+        @click="isMenuOpen = !isMenuOpen"
+        class="md:hidden focus:outline-none"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="w-8 h-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
         </svg>
       </router-link>
     </nav>
@@ -41,7 +59,8 @@
       :class="isMenuOpen ? 'translate-x-0' : 'translate-x-full'"
     >
       <button @click="isMenuOpen = false" class="absolute top-4 right-4 text-2xl">
-        ✕ <!-- Close Icon -->
+        ✕
+        <!-- Close Icon -->
       </button>
 
       <nav class="flex flex-col items-center mt-16 space-y-6 text-lg">
@@ -64,9 +83,9 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue'
 
 // Define your logo image
-const logo = "/images/mercylogo.png";
-const isMenuOpen = ref(false);
+const logo = './images/mercylogo.png'
+const isMenuOpen = ref(false)
 </script>
