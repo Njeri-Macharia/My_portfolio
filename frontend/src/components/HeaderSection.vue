@@ -86,6 +86,6 @@
 import { ref } from 'vue'
 
 // Define your logo image
-const logo = '/images/mercylogo.png'
+const logo = './images/mercylogo.png'
 const isMenuOpen = ref(false)
 </script>

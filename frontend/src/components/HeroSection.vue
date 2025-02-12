@@ -1,6 +1,8 @@
 <template>
   <section class="pt-20 pb-20 px-4 bg-teal-100 flex items-center justify-center min-h-screen">
-    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+    <div
+      class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0"
+    >
       <!-- Left Content -->
       <div class="md:w-1/2 w-full space-y-6 text-center md:text-left md:ml-4">
         <h2 class="text-secondary text-3xl font-semibold">Hello, I'm Mercy Macharia</h2>
@@ -13,11 +15,16 @@
           Creating beautiful and functional digital experiences that help businesses grow
         </p>
         <div class="flex justify-center md:justify-start space-x-4">
-          <router-link to="/lets-talk" class="bg-secondary text-white px-8 py-3 rounded-full hover:bg-primary">
+          <router-link
+            to="/lets-talk"
+            class="bg-secondary text-white px-8 py-3 rounded-full hover:bg-primary"
+          >
             Hire Me
           </router-link>
           <a href="#biography">
-            <button class="bg-primary border-2 border-primary text-white px-8 py-3 rounded-full hover:bg-secondary hover:border-secondary">
+            <button
+              class="bg-primary border-2 border-primary text-white px-8 py-3 rounded-full hover:bg-secondary hover:border-secondary"
+            >
               View Portfolio
             </button>
           </a>
@@ -31,25 +38,25 @@
           :src="profileImage"
           alt="Professional portrait"
           class="object-cover max-w-lg mx-auto rounded-full shadow-lg"
-        >
+        />
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
-import { useMotion } from "@vueuse/motion";
+import { ref, onMounted } from 'vue'
+import { useMotion } from '@vueuse/motion'
 
-const profileImage = "/images/profile.png";
-const imageRef = ref(null);
+const profileImage = './images/profile.png'
+const imageRef = ref(null)
 
 // Apply animation when mounted
 onMounted(() => {
   useMotion(imageRef, {
     initial: { opacity: 0, scale: 0.5 },
     enter: { opacity: 1, scale: 1, transition: { duration: 300 } },
-    hover: { scale: 1.1 }
-  });
-});
+    hover: { scale: 1.1 },
+  })
+})
 </script>
