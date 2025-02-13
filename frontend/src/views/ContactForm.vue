@@ -3,7 +3,7 @@
     <div class="bg-teal100 p-8 rounded-2xl shadow-lg w-full max-w-lg">
       <div class="text-center mb-8">
         <h1 class="text-2xl font-semibold text-secondary">Write Me Your Project</h1>
-    </div>
+      </div>
       <form @submit.prevent="handleSubmit" class="space-y-6">
         <div>
           <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
@@ -13,7 +13,7 @@
             type="text"
             required
             class="mt-1 block w-full rounded-md border-primary shadow-sm focus:border-primary focus:ring-primary"
-          >
+          />
         </div>
 
         <div>
@@ -24,7 +24,7 @@
             type="email"
             required
             class="mt-1 block w-full rounded-md border-'primary shadow-sm focus:border-primary focus:ring-primary"
-          >
+          />
         </div>
 
         <div>
@@ -46,7 +46,13 @@
           {{ loading ? 'Sending...' : 'Send Message' }}
         </button>
 
-        <div v-if="message" :class="['text-center p-4 rounded', success ? 'bg-green text-green-700' : 'bg-red text-red-700']">
+        <div
+          v-if="message"
+          :class="[
+            'text-center p-4 rounded',
+            success ? 'bg-green text-green-700' : 'bg-red text-red-700',
+          ]"
+        >
           {{ message }}
         </div>
       </form>
@@ -60,7 +66,7 @@ import { ref, reactive } from 'vue'
 const formData = reactive({
   name: '',
   email: '',
-  message: ''
+  message: '',
 })
 
 const loading = ref(false)
@@ -72,12 +78,12 @@ const handleSubmit = async () => {
   message.value = ''
 
   try {
-    const response = await fetch('http://localhost:3000/api/contact', {
+    const response = await fetch('http://formsubmit.co/mercymachariya@gmail.com', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify(formData)
+      body: JSON.stringify(formData),
     })
 
     const data = await response.json()
