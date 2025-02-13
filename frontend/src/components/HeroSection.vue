@@ -48,7 +48,7 @@
 import { ref, onMounted } from 'vue'
 import { useMotion } from '@vueuse/motion'
 
-const profileImage = '/profile.png'
+const profileImage = '/images/profile.png'
 const imageRef = ref(null)
 
 // Apply animation when mounted
